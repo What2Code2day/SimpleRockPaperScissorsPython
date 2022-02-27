@@ -1,35 +1,36 @@
 import random
-import time
 
 
 print(f"Hello there!\nToday you have signed up to play Rock-paper-scissors!")
 print()
 while True:
     try:
-        diff = int(input(f"Would you like\nEasy(1) \nMedium(2) \nHard(3)\n"))
+        diff = int(input(f"Would you like\nEasy(1) \nNormal(2) \nHard(3)\n"))
     except ValueError:
         print("Thats not an answer")
 
-    #easy diff 
+    # easy diff
     if diff == 1:
-        choice = int(input(f"Would you like\nRock(1) \nPaper(2)\nor \nScissors(3)\n"))
+        choice = int(
+            input(f"Would you like\nRock(1) \nPaper(2)\nor \nScissors(3)\n"))
         RPS_choices = ["Rock", "Paper", "Scissors"]
         RPS = random.choice(RPS_choices)
         if choice == 1:
-            easy = ["Scissors", "Scissors", "Rock", "Paper", "Rock", "Scissors", "Scissors"]
+            easy = ["Scissors", "Scissors", "Rock",
+                    "Paper", "Rock", "Scissors", "Scissors"]
             easy_choice = random.choice(easy)
             if easy_choice == "Paper":
                 print()
                 print("You chose: Rock")
                 print(f"The computer chose: Paper")
                 print("You Lost!!!")
-                
+
             if easy_choice == "Rock":
                 print()
                 print("You chose: Rock")
                 print(f"The computer chose: Rock")
                 print("You Tied!!!")
-            
+
             if easy_choice == "Scissors":
                 print()
                 print("You chose: Rock")
@@ -37,20 +38,21 @@ while True:
                 print("You WON!!!")
 
         if choice == 2:
-            easy = ["Scissors", "Rock", "Paper", "Paper", "Rock", "Rock", "Rock"]
+            easy = ["Scissors", "Rock", "Paper",
+                    "Paper", "Rock", "Rock", "Rock"]
             easy_choice = random.choice(easy)
             if easy_choice == "Paper":
                 print()
                 print("You chose: Paper")
                 print(f"The computer chose: Paper")
                 print("You Tied!!!")
-                
+
             if easy_choice == "Rock":
                 print()
                 print("You chose: Paper")
                 print(f"The computer chose: Rock")
                 print("You Won!!!")
-            
+
             if easy_choice == "Scissors":
                 print()
                 print("You chose: Paper")
@@ -58,29 +60,31 @@ while True:
                 print("You Lost!!!")
 
         if choice == 3:
-            easy = ["Scissors", "Scissors", "Paper", "Paper", "Paper", "Paper", "Rock"]
+            easy = ["Scissors", "Scissors", "Paper",
+                    "Paper", "Paper", "Paper", "Rock"]
             easy_choice = random.choice(easy)
             if easy_choice == "Paper":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print(f"The computer chose: Paper")
                 print("You Won!!!")
-                
+
             if easy_choice == "Rock":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print(f"The computer chose: Rock")
                 print("You Lost!!!")
-            
+
             if easy_choice == "Scissors":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print("The computer chose: Scissors")
-                print("You Tied!!!")   
+                print("You Tied!!!")
 
-    #Medium diff            
+    # Medium diff
     elif diff == 2:
-        choice = int(input(f"Would you like\nRock(1) \nPaper(2)\nor \nScissors(3)\n"))
+        choice = int(
+            input(f"Would you like\nRock(1) \nPaper(2)\nor \nScissors(3)\n"))
         RPS_choices = ["Rock", "Paper", "Scissors"]
         RPS = random.choice(RPS_choices)
         if choice == 1:
@@ -91,13 +95,13 @@ while True:
                 print("You chose: Rock")
                 print(f"The computer chose: Paper")
                 print("You Lost!!!")
-                
+
             if medium_choice == "Rock":
                 print()
                 print("You chose: Rock")
                 print(f"The computer chose: Rock")
                 print("You Tied!!!")
-            
+
             if medium_choice == "Scissors":
                 print()
                 print("You chose: Rock")
@@ -112,13 +116,13 @@ while True:
                 print("You chose: Paper")
                 print(f"The computer chose: Paper")
                 print("You Tied!!!")
-                
+
             if medium_choice == "Rock":
                 print()
                 print("You chose: Paper")
                 print(f"The computer chose: Rock")
                 print("You Won!!!")
-            
+
             if medium_choice == "Scissors":
                 print()
                 print("You chose: Paper")
@@ -130,25 +134,25 @@ while True:
             medium_choice = random.choice(medium)
             if medium_choice == "Paper":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print(f"The computer chose: Paper")
                 print("You Won!!!")
-                
+
             if medium_choice == "Rock":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print(f"The computer chose: Rock")
                 print("You Lost!!!")
-            
+
             if medium_choice == "Scissors":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print("The computer chose: Scissors")
-                print("You Tied!!!")     
+                print("You Tied!!!")
 
-    #Hard diff
     elif diff == 3:
-        choice = int(input(f"Would you like\nRock(1) \nPaper(2)\nor \nScissors(3)\n"))
+        choice = int(
+            input(f"Would you like\nRock(1) \nPaper(2)\nor \nScissors(3)\n"))
         RPS_choices = ["Rock", "Paper", "Scissors"]
         RPS = random.choice(RPS_choices)
         if choice == 1:
@@ -159,13 +163,13 @@ while True:
                 print("You chose: Rock")
                 print(f"The computer chose: Paper")
                 print("You Lost!!!")
-                
+
             if hard_choice == "Rock":
                 print()
                 print("You chose: Rock")
                 print(f"The computer chose: Rock")
                 print("You Tied!!!")
-            
+
             if hard_choice == "Scissors":
                 print()
                 print("You chose: Rock")
@@ -180,13 +184,13 @@ while True:
                 print("You chose: Paper")
                 print(f"The computer chose: Paper")
                 print("You Tied!!!")
-                
+
             if hard_choice == "Rock":
                 print()
                 print("You chose: Paper")
                 print(f"The computer chose: Rock")
                 print("You Won!!!")
-            
+
             if hard_choice == "Scissors":
                 print()
                 print("You chose: Paper")
@@ -198,27 +202,22 @@ while True:
             hard_choice = random.choice(hard)
             if hard_choice == "Paper":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print(f"The computer chose: Paper")
                 print("You Won!!!")
-                
+
             if hard_choice == "Rock":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print(f"The computer chose: Rock")
                 print("You Lost!!!")
-            
+
             if hard_choice == "Scissors":
                 print()
-                print("You chose: Paper")
+                print("You chose: Scissors")
                 print("The computer chose: Scissors")
-                print("You Tied!!!") 
+                print("You Tied!!!")
 
-    again = int(input(f"Would you like to try again? Yes(1) No(2).\n"))
-    if again == 1:
+    again = input(f"Press Enter to play again!\n")
+    if again == "":
         pass
-    elif again == 2:
-        break
-print("Thanks for playing, have a wonderful day!")
-time.sleep(10)   
-
